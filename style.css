@@ -24,14 +24,14 @@ body {
   margin-top: 5vh;
   min-width: 90vw;
   max-width: 90vw;
-  /* border: 1px solid black; */
 }
+
+/* NAVBAR */
 .navbar {
   min-width: 100%;
   max-width: 100%;
   min-height: 10vh;
   max-height: 10vh;
-  /* border: 1px solid red; */
 }
 .navbar-container {
   display: flex;
@@ -57,6 +57,8 @@ body {
 .navbar-items > :nth-child(2) {
   padding: 0px 3em;
 }
+
+/* LANDING SECTION */
 #landing {
   max-width: 80%;
   min-height: 85vh;
@@ -66,20 +68,22 @@ body {
   margin: 0px auto;
 }
 .landing-container {
-  /* border: 2px solid orangered; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 0px;
+  /* padding: 20px 0px; */
 }
-.landing-container p {
+h4 {
   font-size: 1.5em;
-  padding: 2em;
+  padding: 2.5em;
+  font-weight: normal;
 }
 .landing-container h2 {
   font-size: 4em;
 }
+
+/* ACTION BUTTON */
 .btn-action {
   min-width: 380px;
   max-width: 380px;
@@ -96,9 +100,69 @@ body {
     rgb(109, 137, 191)
   );
   cursor: pointer;
+  margin-bottom: 5vh;
 }
 .btn-action span {
   font-size: 2em;
   font-weight: bold;
   color: white;
+
+}
+
+/* PROPUESTAS */
+#propuestas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading-container {
+  max-width: 650px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px auto;
+  margin-bottom: 6em;
+}
+.heading-container h3 {
+  max-height: 1.8em;
+  min-height: 1.8em;
+  font-size: 2.5em;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  background-color: var(--cyan);
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.grid-container {
+  min-width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 300px 300px;
+}
+.card-body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(142, 86, 158);
+}
+
+/* UTILS CLASS */
+.rotateLeft {
+  transform: rotate(-5deg);
+}
+.rotateRight {
+  margin-top: 60px;
+  transform: rotate(5deg);
+}
+.barra{
+    min-width: 110vw;
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: var(--cyan);
+    color: white;
+    font-weight: bold;
+    overflow: HIDDEN;
 }
