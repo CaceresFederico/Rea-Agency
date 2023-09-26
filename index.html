@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rea Agencia - Consultora potenciamos tu proyecto"
+    />
+    <meta
+      name="keywords"
+      content="REA Agencia, Consultoria, profesionales, potenciar proyectos"
+    />
+    <meta name="robots" content="index, follow" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- google fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- own css -->
     <link rel="stylesheet" href="style.css" />
     <title>Rea | Agencia</title>
   </head>
@@ -24,15 +32,16 @@
               ><img src="./resources/brand.png" alt="Rea agency logo"
             /></a>
           </div>
-          <div class="line"></div>
+          <!-- <div class="line"></div> -->
           <ul class="navbar-items">
-            <li class="nav-item">Servicios</li>
-            <li class="nav-item">Nosotros</li>
-            <li class="nav-item">Contacto</li>
+            <li><a class="nav-item" href="#propuestas">Servicios</a></li>
+            <li><a class="nav-item" href="#sobre">Nosotros</a></li>
+            <li><a class="nav-item" href="#contact">Contacto</a></li>
           </ul>
         </div>
       </nav>
 
+      <!-- LANDING PAGE -->
       <section id="landing">
         <div class="landing-container">
           <h2>Porque lo que creemos,</h2>
@@ -44,61 +53,356 @@
         </div>
       </section>
 
-      <!-- TO DO -->
+      <!-- PROPUESTAS -->
       <section id="propuestas">
-        <div class="heading-container">
+        <div class="header-container">
           <h3 class="rotateLeft">Nuestras</h3>
           <h3 class="rotateRight">propuestas</h3>
         </div>
         <div class="grid-container">
-          <div class="card-body">
+          <div class="card-body" id="diseñoGrafico">
+            <div class="card-description hidden" id="diseñoGraficoPropuestas">
+              <h3>Diseño grafico</h3>
+              <ul>
+                <li>Identidad corporativa</li>
+                <li>Manual de marca</li>
+                <li>Flyers</li>
+                <li>Presentaciones</li>
+                <li>Papeleria comercial</li>
+                <li>Tarjetas personales</li>
+                <li>Invitaciones digitales</li>
+              </ul>
+            </div>
             <div class="card-icon">
               <img src=".//resources/diseñoGrafico.png" alt="" />
+              <h3>diseño grafico</h3>
             </div>
           </div>
-          <div class="card-body">
+          <div class="card-body" id="gestionRedes">
+            <div class="card-description hidden" id="gestionRedesPropuestas">
+              <h3>Gestion de Redes</h3>
+              <ul>
+                <li>Identidad corporativa</li>
+                <li>Manual de marca</li>
+                <li>Flyers</li>
+                <li>Presentaciones</li>
+                <li>Papeleria comercial</li>
+                <li>Tarjetas personales</li>
+                <li>Invitaciones digitales</li>
+              </ul>
+            </div>
             <div class="card-icon">
               <img src=".//resources/gestionRedes.png" alt="" />
             </div>
           </div>
-          <div class="card-body">
+          <div class="card-body" id="mailing">
+            <div class="card-description hidden" id="mailingPropuestas">
+              <h3>mailing</h3>
+              <ul>
+                <li>Identidad corporativa</li>
+                <li>Manual de marca</li>
+                <li>Flyers</li>
+                <li>Presentaciones</li>
+                <li>Papeleria comercial</li>
+                <li>Tarjetas personales</li>
+                <li>Invitaciones digitales</li>
+              </ul>
+            </div>
             <div class="card-icon">
               <img src=".//resources/mailing.png" alt="" />
             </div>
           </div>
-          <div class="card-body">
+          <div class="card-body" id="prensaRrpp">
+            <div class="card-description hidden" id="prensaRrppPropuestas">
+              <h3>prensa y rrpp</h3>
+              <ul>
+                <li>Identidad corporativa</li>
+                <li>Manual de marca</li>
+                <li>Flyers</li>
+                <li>Presentaciones</li>
+                <li>Papeleria comercial</li>
+                <li>Tarjetas personales</li>
+                <li>Invitaciones digitales</li>
+              </ul>
+            </div>
             <div class="card-icon">
               <img src=".//resources/prensaRrpp.png" alt="" />
             </div>
           </div>
-          <div class="card-body">
+          <div class="card-body" id="prensaPeriodismo">
+            <div
+              class="card-description hidden"
+              id="prensaPeriodismoPropuestas"
+            >
+              <h3>prensa y periodismo</h3>
+              <ul>
+                <li>Identidad corporativa</li>
+                <li>Manual de marca</li>
+                <li>Flyers</li>
+                <li>Presentaciones</li>
+                <li>Papeleria comercial</li>
+                <li>Tarjetas personales</li>
+                <li>Invitaciones digitales</li>
+              </ul>
+            </div>
             <div class="card-icon">
               <img src=".//resources/prensaPeriodistica.png" alt="" />
             </div>
           </div>
-          <div class="card-body">
+          <div class="card-body" id="organizacionEventos">
+            <div
+              class="card-description hidden"
+              id="organizacionEventosPropuestas"
+            >
+              <h3>organizacion de eventos</h3>
+              <ul>
+                <li>Identidad corporativa</li>
+                <li>Manual de marca</li>
+                <li>Flyers</li>
+                <li>Presentaciones</li>
+                <li>Papeleria comercial</li>
+                <li>Tarjetas personales</li>
+                <li>Invitaciones digitales</li>
+              </ul>
+            </div>
             <div class="card-icon">
               <img src=".//resources/organizacionEventos.png" alt="" />
             </div>
           </div>
-          <div class="card-body">
+          <div class="card-body" id="asesoria">
+            <div class="card-description hidden" id="asesoriaPropuestas">
+              <h3>asesoria personalizada</h3>
+              <ul>
+                <li>Identidad corporativa</li>
+                <li>Manual de marca</li>
+                <li>Flyers</li>
+                <li>Presentaciones</li>
+                <li>Papeleria comercial</li>
+                <li>Tarjetas personales</li>
+                <li>Invitaciones digitales</li>
+              </ul>
+            </div>
             <div class="card-icon">
               <img src=".//resources/asesorias.png" alt="" />
             </div>
           </div>
-          <div class="card-body">
+          <div class="card-body" id="experiencias">
+            <div class="card-description hidden" id="experienciasPropuestas">
+              <h3>experiencias digitales</h3>
+              <ul>
+                <li>Identidad corporativa</li>
+                <li>Manual de marca</li>
+                <li>Flyers</li>
+                <li>Presentaciones</li>
+                <li>Papeleria comercial</li>
+                <li>Tarjetas personales</li>
+                <li>Invitaciones digitales</li>
+              </ul>
+            </div>
             <div class="card-icon">
               <img src=".//resources/experienciasDigitales.png" alt="" />
             </div>
           </div>
         </div>
         <h4>¿Listo para que creemos algo increíble?</h4>
-        <button class="btn-action"><span>¡Charlemos!</span></button>
-        <div class="barra rotateRight">
-          AGENCIA REA * AGENCIA REA * AGENCIA REA * AGENCIA REA * AGENCIA REA *
-          AGENCIA REA * AGENCIA REA * AGENCIA REA * AGENCIA REA * AGENCIA REA *
+        <button class="btn-action mb-2"><span>¡Charlemos!</span></button>
+        <img src="./resources/barra.png" class="barra" alt="" />
+      </section>
+
+      <!-- SOBRE NOSOTROS -->
+      <section id="sobre">
+        <div class="header-container">
+          <h3 class="rotateLeft">Quiénes</h3>
+          <h3 class="rotateRight">Somos</h3>
+        </div>
+        <h4>
+          Somos un grupo de mujeres profesionales apasionadas y entusiastas de
+          la comunicación, el diseño y la tecnología. Juntas tuvimos una idea
+          espectacular ¡crear nuestra propia agencia!
+        </h4>
+
+        <div class="profiles-container">
+          <div class="row">
+            <div class="profile-card">
+              <div class="tooltip hidden">
+                <div class="tooltip-content">
+                  <h5>nana aprile</h5>
+                  <p>Diseñadora UX/UI</p>
+                  <p>Gráfica y Fotógrafa</p>
+                </div>
+              </div>
+              <img
+                class="profile-thumbnail"
+                src="/resources/profile1.png"
+                alt=""
+              />
+            </div>
+            <div class="profile-card">
+              <div class="tooltip hidden">
+                <div class="tooltip-content">
+                  <h5>flor molinas</h5>
+                  <p>Diseñadora Gráfica</p>
+                  <p>Diseñadora UX/UI</p>
+                </div>
+              </div>
+              <img
+                class="profile-thumbnail"
+                src="/resources/profile2.png"
+                alt=""
+              />
+            </div>
+            <div class="profile-card">
+              <div class="tooltip hidden">
+                <div class="tooltip-content">
+                  <h5>Jossie Anschütz</h5>
+                  <p>Project Manager</p>
+                  <p>UX Writer</p>
+                </div>
+              </div>
+              <img
+                class="profile-thumbnail"
+                src="/resources/profile3.png"
+                alt=""
+              />
+            </div>
+            <div class="profile-card">
+              <div class="tooltip hidden">
+                <div class="tooltip-content">
+                  <h5>Sofi Burtnik</h5>
+                  <p>Periodista</p>
+                  <p>Analista en RRPP</p>
+                </div>
+              </div>
+              <img
+                class="profile-thumbnail"
+                src="/resources/profile4.png"
+                alt=""
+              />
+            </div>
+            <div class="profile-card">
+              <div class="tooltip hidden">
+                <div class="tooltip-content">
+                  <h5>Milu González</h5>
+                  <p>Community Manager</p>
+                  <p>RRPP y Prensa</p>
+                </div>
+              </div>
+              <img
+                class="profile-thumbnail"
+                src="/resources/profile5.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <h4>
+          Nos inspiramos para resolver problemas reales del mundo que nos rodea
+          a través de nuestros servicios.
+        </h4>
+      </section>
+      <img src="./resources/barra2.png" class="barraDos" alt="" />
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="header-container">
+          <h3 class="rotateLeft">cómo</h3>
+          <h3 class="rotateRight">ayudamos</h3>
+        </div>
+        <div class="contact-container">
+          <div class="row">
+            <div class="col-6">
+              <div class="contact-header">
+                <h2>Contanos un poco</h2>
+                <h2>sobre tu proyecto y</h2>
+                <h2>potenciémoslo.</h2>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form">
+                <input
+                  type="email"
+                  name="email"
+                  id="userEmail"
+                  placeholder="Email"
+                />
+                <input
+                  type="text"
+                  name="name"
+                  id="userName"
+                  placeholder="Nombre / Nombre de la empresa"
+                />
+                <textarea
+                  name="message"
+                  id="userMessage"
+                  cols="30"
+                  rows="10"
+                  placeholder="Mensaje"
+                ></textarea>
+                <input type="submit" class="btn-action" value="Enviar" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
+
+    <!-- FOOTER -->
+    <img src="./resources/dobleBarras.png" class="footer-bars" alt="" />
+    <footer>
+      <div class="row">
+        <div class="footer-logo">
+          <img src="./resources/brand.png" class="footer-img" alt="Rea Logo" />
+          <p>Lo que creemos,</p>
+          <p>también lo creamos</p>
+        </div>
+        <div class="footer-links">
+          <h3>Links utiles</h3>
+          <ul>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Nosotras</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Datos de contacto</h3>
+          <ul>
+            <li>
+              <ion-icon name="mail-outline"></ion-icon>
+              <a href="#">Agenciareaok@gmail.com</a>
+            </li>
+            <li>
+              <ion-icon name="call-outline"></ion-icon>
+              <a href="#">+54 9 11 6286-5101</a>
+            </li>
+            <li>
+              <ion-icon name="location-outline"></ion-icon>
+              <span>Buenos Aires, Argentina</span>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Redes sociales</h3>
+          <ul>
+            <li>
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row rights">
+        <p>© 2023 Agencia REA | Todos los derechos reservados</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
