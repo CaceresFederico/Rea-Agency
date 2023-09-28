@@ -55,9 +55,24 @@ textarea {
   list-style: none;
   align-items: center;
 }
-
+.nav-menu {
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.nav-menu-icon {
+  font-size: 5em;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
 .nav-item {
-  color: black;
+  color: #333;
   font-size: 1.5em;
   cursor: pointer;
 }
@@ -148,7 +163,6 @@ h4 {
   font-weight: 900;
   color: white;
   text-transform: uppercase;
-  background-color: var(--cyan);
   padding: 10px;
   margin-right: 20px;
 }
@@ -157,8 +171,9 @@ h4 {
   min-width: 100%;
   max-width: 100%;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, 350px);
   grid-template-rows: 350px 350px;
+  justify-content: center;
 }
 .card-body {
   background-color: white;
@@ -173,10 +188,12 @@ h4 {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  justify-content: center;
 }
 .card-icon h3 {
   margin-top: 20px;
   text-transform: uppercase;
+  text-align: center;
 }
 .card-description {
   position: absolute;
@@ -196,62 +213,13 @@ h4 {
   justify-content: center;
   text-align: center;
 }
-.card-description h3 {
-  text-transform: uppercase;
-  padding-bottom: 20px;
-}
 
-/* UTILS CLASS */
-.row {
-  min-width: 100%;
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.col-6 {
-  display: flex;
-  flex-direction: column;
-  min-width: 50%;
-  max-width: 50%;
-}
-.rotateLeft {
-  transform: rotate(-6deg);
-}
-.rotateRight {
-  margin-top: 20px;
-  transform: rotate(6deg);
-}
-.barra {
-  overflow-x: hidden;
-  min-width: 110vw;
-  max-width: 110vw;
-  margin-left: -75px;
-}
-.barraDos {
-  min-width: 100vw;
-  max-width: 100vw;
-  margin-left: -140px;
-}
-.mt-2 {
-  margin-top: 20vh;
-}
-.mb-2 {
-  margin-bottom: 20vh;
-}
-.hidden {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-}
+/* CARDS TRANSITIONS */
 .card-body:hover > .card-description {
   visibility: visible;
   opacity: 1;
 }
-/* SOBRE  */
-#sobre .header-container h3 {
-  background-color: var(--lila);
-}
+/* ABOUT */
 #sobre h4 {
   min-width: 20vw;
   max-width: 50vw;
@@ -316,9 +284,6 @@ h4 {
 }
 
 /* CONTACT */
-#contact .header-container h3 {
-  background-color: var(--blue);
-}
 .contact-container {
   display: flex;
 }
@@ -423,6 +388,59 @@ ion-icon {
   font-weight: bold;
 }
 
+/* UTILS CLASS */
+.row {
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.col-6 {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  max-width: 50%;
+}
+.rotateLeft {
+  transform: rotate(-6deg);
+}
+.rotateRight {
+  margin-top: 20px;
+  transform: rotate(6deg);
+}
+.barra {
+  min-width: 100vw;
+  max-width: 100vw;
+  margin-left: 0px;
+}
+.barraDos {
+  min-width: 100vw;
+  max-width: 100vw;
+  margin-left: -140px;
+}
+.mt-2 {
+  margin-top: 20vh;
+}
+.mb-2 {
+  margin-bottom: 20vh;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.bg-lila{
+  background-color: var(--lila) !important;
+}
+.bg-blue{
+  background-color: var(--blue) !important;
+}
+.bg-cyan{
+  background-color: var(--cyan) !important;
+}
+
+
 /* MEDIA QUERIES */
 @media (max-width: 1440px) {
   .profile-thumbnail {
@@ -478,6 +496,11 @@ ion-icon {
   .nav-item {
     font-size: 1.2em;
   }
+  .navbar-items{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
   .landing-container h2 {
     font-size: 2.7em;
   }
@@ -487,19 +510,63 @@ ion-icon {
   h4 {
     font-size: 1.2em;
   }
-  .card-description {
-    width: 343px;
-  }
   .btn-action {
     min-width: 300px;
     max-width: 300px;
     min-height: 70px;
     max-height: 70px;
   }
+  .grid-container {
+    grid-template-columns: 300px 300px;
+    grid-template-rows: repeat(4, 300px);
+    justify-content: center;
+  }
+  .card-description {
+    width: 300px;
+    height: 300px;
+  }
+  .contact-container .row{
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-header{
+    min-width: 100%;
+    padding-bottom: 50px;
+  }
+  .contact-container h2{
+    text-align: center;
+  }
+  ul li {
+    padding: 5px 0px;
+  }
+  footer {
+    font-size: 0.8em;
+  }
+  footer .row{
+    flex-direction: column;
+  }
   .footer-links {
     display: none;
   }
 }
+@media (max-width: 425px) {
+  .grid-container {
+    grid-template-columns: 250px;
+  }
+  .header-container {
+    flex-direction: column;
+  }
+  #contact{
+    display: none;
+  }
+  .contact-header{
+    font-size: 1em;
+  }
+  .rotateRight {
+    margin-top: 40px;
+  }
+}
+
 @media (max-width: 320px) {
   .navbar-items {
     display: none;

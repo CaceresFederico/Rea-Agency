@@ -22,6 +22,14 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Rea | Agencia</title>
+    <!-- TO DO
+    - END RESPONSIVE DESIGN 
+      -SUPPORTED RESOLUTIONS:
+      (1920,1440,1024,768, 425,375,320px)
+      -ADD NAV MENU
+    - WORK IN TRANSITIONS EFECTS TO SECTIONS
+    - 
+    -->
   </head>
   <body>
     <div class="body-container">
@@ -32,7 +40,11 @@
               ><img src="./resources/brand.png" alt="Rea agency logo"
             /></a>
           </div>
-          <!-- <div class="line"></div> -->
+          <div class="nav-menu">
+            <button class="nav-menu">
+              <ion-icon class="nav-menu-icon" name="apps-outline"></ion-icon>
+            </button>
+          </div>
           <ul class="navbar-items">
             <li><a class="nav-item" href="#propuestas">Servicios</a></li>
             <li><a class="nav-item" href="#sobre">Nosotros</a></li>
@@ -56,12 +68,12 @@
       <!-- PROPUESTAS -->
       <section id="propuestas">
         <div class="header-container">
-          <h3 class="rotateLeft">Nuestras</h3>
-          <h3 class="rotateRight">propuestas</h3>
+          <h3 class="rotateLeft bg-cyan">Nuestras</h3>
+          <h3 class="rotateRight bg-cyan">propuestas</h3>
         </div>
         <div class="grid-container">
-          <div class="card-body" id="diseñoGrafico">
-            <div class="card-description hidden" id="diseñoGraficoPropuestas">
+          <div class="card-body">
+            <div class="card-description hidden">
               <h3>Diseño grafico</h3>
               <ul>
                 <li>Identidad corporativa</li>
@@ -78,8 +90,8 @@
               <h3>diseño grafico</h3>
             </div>
           </div>
-          <div class="card-body" id="gestionRedes">
-            <div class="card-description hidden" id="gestionRedesPropuestas">
+          <div class="card-body">
+            <div class="card-description hidden">
               <h3>Gestion de Redes</h3>
               <ul>
                 <li>Identidad corporativa</li>
@@ -93,10 +105,11 @@
             </div>
             <div class="card-icon">
               <img src=".//resources/gestionRedes.png" alt="" />
+              <h3>gestion de redes</h3>
             </div>
           </div>
-          <div class="card-body" id="mailing">
-            <div class="card-description hidden" id="mailingPropuestas">
+          <div class="card-body">
+            <div class="card-description hidden">
               <h3>mailing</h3>
               <ul>
                 <li>Identidad corporativa</li>
@@ -110,10 +123,11 @@
             </div>
             <div class="card-icon">
               <img src=".//resources/mailing.png" alt="" />
+              <h3>mailing</h3>
             </div>
           </div>
-          <div class="card-body" id="prensaRrpp">
-            <div class="card-description hidden" id="prensaRrppPropuestas">
+          <div class="card-body">
+            <div class="card-description hidden">
               <h3>prensa y rrpp</h3>
               <ul>
                 <li>Identidad corporativa</li>
@@ -127,13 +141,11 @@
             </div>
             <div class="card-icon">
               <img src=".//resources/prensaRrpp.png" alt="" />
+              <h3>prensa y rrpp</h3>
             </div>
           </div>
-          <div class="card-body" id="prensaPeriodismo">
-            <div
-              class="card-description hidden"
-              id="prensaPeriodismoPropuestas"
-            >
+          <div class="card-body">
+            <div class="card-description hidden">
               <h3>prensa y periodismo</h3>
               <ul>
                 <li>Identidad corporativa</li>
@@ -147,13 +159,11 @@
             </div>
             <div class="card-icon">
               <img src=".//resources/prensaPeriodistica.png" alt="" />
+              <h3>prensa periodistica</h3>
             </div>
           </div>
           <div class="card-body" id="organizacionEventos">
-            <div
-              class="card-description hidden"
-              id="organizacionEventosPropuestas"
-            >
+            <div class="card-description hidden">
               <h3>organizacion de eventos</h3>
               <ul>
                 <li>Identidad corporativa</li>
@@ -167,6 +177,7 @@
             </div>
             <div class="card-icon">
               <img src=".//resources/organizacionEventos.png" alt="" />
+              <h3>organización de eventos</h3>
             </div>
           </div>
           <div class="card-body" id="asesoria">
@@ -184,6 +195,7 @@
             </div>
             <div class="card-icon">
               <img src=".//resources/asesorias.png" alt="" />
+              <h3>asesoria personalizada</h3>
             </div>
           </div>
           <div class="card-body" id="experiencias">
@@ -201,6 +213,7 @@
             </div>
             <div class="card-icon">
               <img src=".//resources/experienciasDigitales.png" alt="" />
+              <h3>experiencias digitales</h3>
             </div>
           </div>
         </div>
@@ -212,8 +225,8 @@
       <!-- SOBRE NOSOTROS -->
       <section id="sobre">
         <div class="header-container">
-          <h3 class="rotateLeft">Quiénes</h3>
-          <h3 class="rotateRight">Somos</h3>
+          <h3 class="rotateLeft bg-lila">Quiénes</h3>
+          <h3 class="rotateRight bg-lila">Somos</h3>
         </div>
         <h4>
           Somos un grupo de mujeres profesionales apasionadas y entusiastas de
@@ -305,8 +318,8 @@
       <!-- CONTACT -->
       <section id="contact">
         <div class="header-container">
-          <h3 class="rotateLeft">cómo</h3>
-          <h3 class="rotateRight">ayudamos</h3>
+          <h3 class="rotateLeft bg-blue">cómo</h3>
+          <h3 class="rotateRight bg-blue">ayudamos</h3>
         </div>
         <div class="contact-container">
           <div class="row">
