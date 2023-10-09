@@ -11,17 +11,17 @@
   --blue: #5271ff;
   --skyBlue: #519fb2;
   --footerBlue: #5c729e;
+  --white: #fffafa;
+  --grey: #333;
 }
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   min-width: 100vw;
   max-width: 100vw;
-  background: linear-gradient(white, var(--cyan));
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(var(--white), var(--cyan));
   overflow-x: hidden;
-  color: #333;
+  color: var(--grey);
 }
 input,
 textarea {
@@ -65,20 +65,22 @@ textarea {
   outline: none;
   visibility: hidden;
   opacity: 0;
+  display: none;
 }
 .nav-menu-icon {
   font-size: 5em;
   outline: none;
   box-shadow: none;
   border: none;
+  color: var(--lila);
 }
 .nav-link {
-  color: #333;
+  color: var(--grey);
   font-size: 1.5em;
   cursor: pointer;
 }
 .nav-link:hover {
-  color: var(--skyBlue);
+  color: var(--lila);
 }
 .navbar-links > :nth-child(2) {
   padding: 0px 3em;
@@ -104,12 +106,11 @@ textarea {
 }
 h4 {
   margin: 0px auto;
-  font-size: 1.5em;
+  font-size: 1.8em;
   padding: 2.5em;
   font-weight: normal;
   text-align: center;
-  min-width: 50%;
-  max-width: 80%;
+  /* border: 1px solid red; */
 }
 
 /* ACTION BUTTON */
@@ -119,7 +120,7 @@ h4 {
   min-height: 70px;
   max-height: 70px;
   border-radius: 40px;
-  padding: 10, px;
+  padding: 10px;
   border: none;
   background-image: linear-gradient(
     to right,
@@ -128,20 +129,20 @@ h4 {
     rgb(133, 115, 179),
     rgb(109, 137, 191)
   );
-  background-color: #333;
+  background-color: var(--grey);
   cursor: pointer;
   margin-bottom: 5vh;
 }
 .btn-action span {
   font-size: 2em;
   font-weight: bold;
-  color: white;
+  color: var(--white);
 }
 
 .btn-action:hover {
   background-image: none;
-  background-color: #333;
-  border: 2px solid #333;
+  background-color: var(--grey);
+  padding: 0px;
 }
 
 /* PROPUESTAS */
@@ -162,12 +163,11 @@ h4 {
   min-height: 1.8em;
   font-size: 2.5em;
   font-weight: 900;
-  color: white;
+  color: var(--white);
   text-transform: uppercase;
   padding: 10px;
   margin-right: 20px;
 }
-
 .grid-container {
   min-width: 100%;
   max-width: 100%;
@@ -177,7 +177,7 @@ h4 {
   justify-content: center;
 }
 .card-body {
-  background-color: white;
+  background-color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,8 +189,6 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* min-height: 350px;
-  max-height: 350px; */
 }
 .card-icon h3 {
   margin-top: 20px;
@@ -209,7 +207,7 @@ h4 {
   width: 350px;
   min-height: 350px;
   max-height: 350px;
-  color: white;
+  color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -243,7 +241,7 @@ h4 {
   position: absolute;
   width: 200px;
   height: 100px;
-  background-color: white;
+  background-color: var(--white);
   color: black;
   border-radius: 20px;
 }
@@ -258,7 +256,7 @@ h4 {
   font-weight: bold;
 }
 .tooltip-conten p {
-  color: grey;
+  color: var(--grey);
 }
 .profile-card {
   display: flex;
@@ -268,12 +266,13 @@ h4 {
 .profile-thumbnail {
   margin: 5px;
   border-radius: 50%;
-  border: 10px solid white;
+  border: 10px solid var(--white);
   margin-top: 120px;
+  width: 80%;
 }
 .profile-thumbnail:hover {
   cursor: pointer;
-  background: linear-gradient(white, white) padding-box,
+  background: linear-gradient(var(--white), var(--white)) padding-box,
     linear-gradient(
         to right,
         rgb(142, 86, 158),
@@ -314,17 +313,16 @@ input[type="text"] {
 }
 ::placeholder {
   font-family: "Montserrat";
-  /* text-transform: capitalize; */
 }
 input[type="submit"] {
   font-family: "montserrat";
   font-size: 1.2em;
   margin-top: 5vh;
   margin-left: auto;
-  color: white;
+  color: var(--white);
 }
 .contacto-header {
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid var(--grey);
   padding-bottom: 20px;
   width: 50%;
 }
@@ -345,7 +343,7 @@ footer .row {
   max-width: 90vw;
   margin: 0px auto;
   display: flex;
-  color: white;
+  color: var(--white);
   justify-content: space-between;
 }
 footer .row:nth-child(1) {
@@ -367,7 +365,7 @@ ul li {
   padding: 10px 0px;
 }
 ul li a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   font-size: 1.2em;
 }
@@ -389,7 +387,7 @@ ion-icon {
 }
 /* FOOTER RIGHTS */
 .rights {
-  border-top: 1px solid white;
+  border-top: 1px solid var(--white);
 }
 .rights p {
   margin: 0px auto;
@@ -398,64 +396,19 @@ ion-icon {
   font-weight: bold;
 }
 
-/* UTILS CLASS */
-.row {
-  min-width: 100%;
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.col-6 {
-  display: flex;
-  flex-direction: column;
-  min-width: 50%;
-  max-width: 50%;
-}
-.rotateLeft {
-  transform: rotate(-6deg);
-}
-.rotateRight {
-  margin-top: 20px;
-  transform: rotate(6deg);
-}
-.barra {
-  min-width: 100vw;
-  max-width: 100vw;
-  margin-left: 0px;
-}
-.barraDos {
-  min-width: 100vw;
-  max-width: 100vw;
-  margin-left: -140px;
-}
-.mt-2 {
-  margin-top: 20vh;
-}
-.mb-2 {
-  margin-bottom: 20vh;
-}
-.mb-1 {
-  margin-bottom: 10vh;
-}
-.hidden {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-}
-.bg-lila {
-  background-color: var(--lila) !important;
-}
-.bg-blue {
-  background-color: var(--blue) !important;
-}
-.bg-cyan {
-  background-color: var(--cyan) !important;
-}
-
 /* MEDIA QUERIES */
+@media (max-width: 1920px) {
+  .barraDos {
+    margin: 0px;
+    margin-left: -96px !important;
+  }
+}
 @media (max-width: 1440px) {
+  .landing-container h2 {
+    font-size: 3em;
+  }
   h4 {
+    font-size: 1.3em;
     line-height: 1.5em;
   }
   .navbar-links {
@@ -487,10 +440,16 @@ ion-icon {
   footer .row:first-child {
     padding-top: 5vh;
   }
+  input[type="submit"] {
+    min-width: 300px;
+    max-width: 300px;
+  }
 }
 @media (max-width: 1024px) {
+  .logo {
+    width: 80%;
+  }
   .landing-container h2 {
-    font-size: 3.5em;
     width: 100%;
     text-align: center;
   }
@@ -527,11 +486,30 @@ ion-icon {
     opacity: 0;
     display: none;
   }
+  .nav-menu-button {
+    background-color: Transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+    outline: none;
+  }
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav-menu-icon {
+    font-size: 3em;
+    padding: 0px;
+  }
   .landing-container h2 {
     font-size: 2.7em;
   }
   .header-container h3 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   h4 {
     font-size: 1.2em;
@@ -552,6 +530,13 @@ ion-icon {
     min-height: 300px;
     max-height: 300px;
   }
+  .propuestas-icon {
+    max-width: 90px;
+  }
+  .card-icon h3 {
+    font-size: 1em;
+    max-width: 60%;
+  }
   .contacto-container .row {
     flex-direction: column;
     align-items: center;
@@ -562,10 +547,16 @@ ion-icon {
     border: none;
   }
   .contacto-container h2 {
+    font-size: 1.8em;
     text-align: center;
   }
   .barraDos {
-    margin-left: -38px;
+    margin-left: -38px !important;
+  }
+  input[type="submit"] {
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 10vh;
   }
   ul li {
     padding: 5px 0px;
@@ -577,6 +568,7 @@ ion-icon {
     display: none;
   }
 }
+
 @media (max-width: 425px) {
   h4 {
     min-width: 80vw;
@@ -600,7 +592,12 @@ ion-icon {
   }
   .grid-container {
     grid-template-columns: 250px;
-    grid-template-rows: repeat(8, 300px);
+    grid-template-rows: 300px;
+  }
+  .card-body:not(:first-child) {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
   }
   .header-container {
     flex-direction: column;
@@ -608,10 +605,13 @@ ion-icon {
   .btn-action {
     min-width: 200px;
     max-width: 200px;
+    min-height: 60px;
+    max-height: 60px;
     font-size: 0.7em;
+    margin-bottom: 0px;
   }
-  #contacto {
-    display: none;
+  .col-6 {
+    min-width: 100% !important;
   }
   .contacto-header {
     font-size: 1em;
@@ -621,6 +621,12 @@ ion-icon {
   }
   .card-description {
     width: 250px;
+  }
+  .propuestas-icon {
+    width: 80px;
+  }
+  .card-icon h3 {
+    max-width: 80%;
   }
   #sobre {
     margin-top: 10vh;
@@ -635,7 +641,13 @@ ion-icon {
     margin-left: 20px;
   }
   .barraDos {
-    margin-left: -21px;
+    margin-left: -21px !important;
+  }
+  input[type="submbit"] {
+    padding: 0px;
+  }
+  #contacto .header-container {
+    align-items: center;
   }
   footer .row {
     flex-direction: column;
@@ -674,8 +686,78 @@ ion-icon {
     padding: 2.5em 0em;
   }
 }
-/* @media (max-width: 375px) {
-  #landing h2 {
-    font-size: 1.2em;
-  }
-} */
+
+/* UTILS CLASS */
+.row {
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.col-6 {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  max-width: 50%;
+}
+.rotateLeft {
+  transform: rotate(-6deg);
+}
+.rotateRight {
+  margin-top: 20px;
+  transform: rotate(6deg);
+}
+.barra {
+  min-width: 100vw;
+  max-width: 100vw;
+  margin-left: 0px;
+}
+.barraDos {
+  min-width: 100vw;
+  max-width: 100vw;
+  margin-left: -140px;
+}
+.mt-2 {
+  margin-top: 20vh !important;
+}
+.mb-2 {
+  margin-bottom: 20vh !important;
+}
+.mb-1 {
+  margin-bottom: 10vh !important;
+}
+.mt-1 {
+  margin-top: 10vh !important;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s, opacity 0.5s linear;
+}
+.d-none {
+  display: none;
+}
+.show {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 10vh;
+  right: 5vw;
+  color: var(--lila);
+  border-right: 2px solid var(--lila);
+}
+.bg-lila {
+  background-color: var(--lila) !important;
+}
+.bg-blue {
+  background-color: var(--blue) !important;
+}
+.bg-cyan {
+  background-color: var(--cyan) !important;
+}
+.bg-none {
+  background-image: none;
+}

@@ -23,15 +23,6 @@
     <link rel="icon" type="image/png" href="./resources/favicon.png" />
     <link rel="stylesheet" href="style.css" />
     <title>Rea | Agencia</title>
-    <!-- TO DO
-    - END RESPONSIVE DESIGN 
-      -SUPPORTED RESOLUTIONS:
-      (1920,1440,1024,768, 425,375,320px)
-      -ADD NAV MENU
-    - WORK IN TRANSITIONS EFECTS TO SECTIONS
-    - COMPRESS RESOURCES
-    - 
-    -->
   </head>
   <body>
     <div class="body-container">
@@ -39,19 +30,22 @@
         <div class="navbar-container">
           <div class="navbar-brand">
             <a href="index.html"
-              ><img src="./resources/brand.png" alt="Rea agency logo"
+              ><img
+                class="logo"
+                src="./resources/brand.png"
+                alt="Rea agency logo"
             /></a>
-          </div>
-          <div class="nav-menu">
-            <button class="nav-menu">
-              <ion-icon class="nav-menu-icon" name="apps-outline"></ion-icon>
-            </button>
           </div>
           <ul class="navbar-links">
             <li><a class="nav-link" href="#propuestas">Servicios</a></li>
             <li><a class="nav-link" href="#sobre">Nosotras</a></li>
             <li><a class="nav-link" href="#contacto">Contacto</a></li>
           </ul>
+          <div class="nav-menu">
+            <button class="nav-menu-button">
+              <ion-icon class="nav-menu-icon" name="menu-outline"></ion-icon>
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -68,7 +62,7 @@
       </section>
 
       <!-- PROPUESTAS -->
-      <section id="propuestas">
+      <section id="propuestas" class="mt-1">
         <div class="header-container">
           <h3 class="rotateLeft bg-cyan">Nuestras</h3>
           <h3 class="rotateRight bg-cyan">propuestas</h3>
@@ -88,7 +82,11 @@
               </ul>
             </div>
             <div class="card-icon">
-              <img src=".//resources/diseñoGrafico.png" alt="" />
+              <img
+                class="propuestas-icon"
+                src=".//resources/diseñoGrafico.png"
+                alt="Diseño gráfico icon"
+              />
               <h3>diseño grafico</h3>
             </div>
           </div>
@@ -106,7 +104,11 @@
               </ul>
             </div>
             <div class="card-icon">
-              <img src=".//resources/gestionRedes.png" alt="" />
+              <img
+                class="propuestas-icon"
+                src=".//resources/gestionRedes.png"
+                alt=""
+              />
               <h3>gestion de redes</h3>
             </div>
           </div>
@@ -124,7 +126,11 @@
               </ul>
             </div>
             <div class="card-icon">
-              <img src=".//resources/mailing.png" alt="" />
+              <img
+                class="propuestas-icon"
+                src=".//resources/mailing.png"
+                alt=""
+              />
               <h3>mailing</h3>
             </div>
           </div>
@@ -142,7 +148,11 @@
               </ul>
             </div>
             <div class="card-icon">
-              <img src=".//resources/prensaRrpp.png" alt="" />
+              <img
+                class="propuestas-icon"
+                src=".//resources/prensaRrpp.png"
+                alt=""
+              />
               <h3>prensa y rrpp</h3>
             </div>
           </div>
@@ -160,7 +170,11 @@
               </ul>
             </div>
             <div class="card-icon">
-              <img src=".//resources/prensaPeriodistica.png" alt="" />
+              <img
+                class="propuestas-icon"
+                src=".//resources/prensaPeriodistica.png"
+                alt=""
+              />
               <h3>prensa periodistica</h3>
             </div>
           </div>
@@ -178,7 +192,11 @@
               </ul>
             </div>
             <div class="card-icon">
-              <img src=".//resources/organizacionEventos.png" alt="" />
+              <img
+                class="propuestas-icon"
+                src=".//resources/organizacionEventos.png"
+                alt=""
+              />
               <h3>organización de eventos</h3>
             </div>
           </div>
@@ -196,7 +214,11 @@
               </ul>
             </div>
             <div class="card-icon">
-              <img src=".//resources/asesorias.png" alt="" />
+              <img
+                class="propuestas-icon"
+                src=".//resources/asesorias.png"
+                alt=""
+              />
               <h3>asesoria personalizada</h3>
             </div>
           </div>
@@ -214,12 +236,17 @@
               </ul>
             </div>
             <div class="card-icon">
-              <img src=".//resources/experienciasDigitales.png" alt="" />
+              <img
+                class="propuestas-icon"
+                src=".//resources/experienciasDigitales.png"
+                alt=""
+              />
               <h3>experiencias digitales</h3>
             </div>
           </div>
         </div>
         <h4>¿Listo para que creemos algo increíble?</h4>
+        <button class="btn-action mb-1 bg-none d-none"><span>Mostrar más</span></button>
         <button class="btn-action mb-2"><span>¡Charlemos!</span></button>
         <img src="./resources/barra.png" class="barra" alt="" />
       </section>
@@ -366,7 +393,11 @@
     <footer>
       <div class="row">
         <div class="footer-logo">
-          <img src="./resources/brand-white.png" class="footer-img" alt="Rea Logo" />
+          <img
+            src="./resources/brand-white.png"
+            class="footer-img"
+            alt="Rea Logo"
+          />
           <p>Lo que creemos,</p>
           <p>también lo creamos</p>
         </div>
