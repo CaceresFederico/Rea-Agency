@@ -284,10 +284,6 @@ h4 {
   border-radius: 50em;
   border: 10px solid transparent;
 }
-#sobre .barra {
-  margin-left: -100px;
-  background-color: var(--lila);
-}
 
 /* CONTACT */
 .contacto-container {
@@ -298,7 +294,7 @@ h4 {
   display: flex;
   flex-direction: column;
 }
-.form input {
+.form input:not([type="submit"]) {
   padding: 25px;
 }
 input[type="text"] {
@@ -334,9 +330,6 @@ footer {
 }
 footer h3 {
   margin-bottom: 20px;
-}
-footer .barra:nth-child(2) {
-  background-color: var(--lila);
 }
 footer .row {
   min-width: 90vw;
@@ -397,12 +390,6 @@ ion-icon {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 1920px) {
-  .barraDos {
-    margin: 0px;
-    margin-left: -96px !important;
-  }
-}
 @media (max-width: 1440px) {
   .landing-container h2 {
     font-size: 3em;
@@ -421,15 +408,6 @@ ion-icon {
   .profile-thumbnail {
     max-width: 250px;
     max-height: 250px;
-  }
-  .barra {
-    min-width: 100vw;
-    max-width: 100vw;
-    margin-left: 0px;
-  }
-  .barraDos {
-    max-width: 120vw;
-    margin-left: -72px;
   }
   #sobre h4 {
     max-width: 60vw;
@@ -468,10 +446,6 @@ ion-icon {
   .profile-thumbnail {
     margin: 20px;
     margin-top: 120px;
-  }
-  .barraDos {
-    max-width: 100vw;
-    margin-left: -51px;
   }
   .contacto-header {
     width: 80%;
@@ -549,9 +523,6 @@ ion-icon {
   .contacto-container h2 {
     font-size: 1.8em;
     text-align: center;
-  }
-  .barraDos {
-    margin-left: -38px !important;
   }
   input[type="submit"] {
     margin: 0px auto;
@@ -640,9 +611,6 @@ ion-icon {
   #sobre .rotateRight {
     margin-left: 20px;
   }
-  .barraDos {
-    margin-left: -21px !important;
-  }
   input[type="submbit"] {
     padding: 0px;
   }
@@ -713,10 +681,10 @@ ion-icon {
   max-width: 100vw;
   margin-left: 0px;
 }
-.barraDos {
+.barraDos{
   min-width: 100vw;
   max-width: 100vw;
-  margin-left: -140px;
+  margin-left: -5vw;
 }
 .mt-2 {
   margin-top: 20vh !important;

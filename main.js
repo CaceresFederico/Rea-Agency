@@ -18,6 +18,7 @@ profilesArray.forEach((profile) => {
       item.classList.toggle("hidden");
     });
   });
+
   profile.addEventListener("mouseout", () => {
     tooltipArray.forEach((item) => {
       item.classList.toggle("hidden");
